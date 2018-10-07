@@ -2,6 +2,9 @@
 
 [toc]
 
+重新加载配置文件
+nginx -s reload
+
 ## 1.静态HTTP服务器
 ```
 server{

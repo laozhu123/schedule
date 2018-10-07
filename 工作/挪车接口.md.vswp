@@ -1,8 +1,13 @@
 vnote_backup_file_826537664 /Users/daisycc/Desktop/md/工作/挪车接口.md
 # 挪车接口
-1. 生成体验码
-2. 获取挪车码详情
-3. 短信留言
-4. 获取短信列表
-5. 短信已读、未读
-6. 
+1. 生成体验码                   CreateUserMoveCarCode
+2. 获取挪车码详情             GetUserMoveCarCode
+3. 获取挪车码列表             GetUserMoveCarCodeList
+4. 短信留言                      CreateUserMoveCarSmsRecord 
+5. 获取短信列表                GetUserMoveCarSmsRecordList
+6. 短信已读、未读             MarkUserMoveCarSmsRecord
+7. 手机短信跳转到h5界面
+8. 过期时间设置
+9. 续费
+10. 修改绑定信息              UpdateUserMoveCarCode
+11. 通知挪车时，根据是否过期来判断(短信和打电话都需要，在s4s_server中)
