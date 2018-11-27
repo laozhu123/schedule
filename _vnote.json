@@ -7,25 +7,25 @@
     "recycle_bin_folder": "_v_recycle_bin",
     "sub_directories": [
         {
-            "name": "csdn"
-        },
-        {
-            "name": "work"
-        },
-        {
-            "name": "learnmark"
+            "name": "博客"
         },
         {
             "name": "工作"
         },
         {
-            "name": "系统设计"
+            "name": "我的"
         },
         {
-            "name": "blog"
+            "name": "接口"
         },
         {
             "name": "记录"
+        },
+        {
+            "name": "我的项目"
+        },
+        {
+            "name": "健身微信公众号"
         }
     ],
     "tags": [
