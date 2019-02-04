@@ -1,0 +1,28 @@
+### docker 配置：
+#### mysql  
+##### local
+docker run --name seven --volume /Users/daisycc/data:/var/lib/mysql -p 3308:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:latest
+mysql -u root -p
+alter user "root"@"%" identified with mysql_native_password by "123456";
+
+##### master
+docker run --name mysql --volume /root/mysql/data:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:latest
+docker exec -it mysql bash
+mysql -u root -p
+alter user "root"@"%" identified with mysql_native_password by "123456";
+
+
+#### yapi
+##### 网站  
+https://www.jianshu.com/p/a97d2efb23c5
+
+##### 用户名 密码
+admin@admin.com  ymfe.org
+
+##### nginx
+/usr/local/webserver/nginx/sbin/nginx -t
+/usr/local/webserver/nginx/sbin/nginx -s reload            # 重新载入配置文件
+/usr/local/webserver/nginx/sbin/nginx -s reopen            # 重启 Nginx
+/usr/local/webserver/nginx/sbin/nginx -s stop              # 停止 Nginx
+
+
