@@ -19,6 +19,7 @@ https://www.jianshu.com/p/a97d2efb23c5
 ##### 用户名 密码
 admin@admin.com  ymfe.org
 
+
 ##### nginx
 /usr/local/webserver/nginx/sbin/nginx -t
 /usr/local/webserver/nginx/sbin/nginx -s reload            # 重新载入配置文件
