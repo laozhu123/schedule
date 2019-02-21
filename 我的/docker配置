@@ -5,6 +5,9 @@ docker run --name seven --volume /Users/daisycc/data:/var/lib/mysql -p 3308:3306
 mysql -u root -p
 alter user "root"@"%" identified with mysql_native_password by "123456";
 
+password:1GO4cqcV*g4K
+
+
 ##### master
 docker run --name mysql --volume /root/mysql/data:/var/lib/mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:latest
 docker exec -it mysql bash
