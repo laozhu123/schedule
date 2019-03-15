@@ -1,4 +1,6 @@
 ### 马上做事项
+- [ ] 用vps搭建k8s
+- [ ] 看完数据结构部分
 
 #### 小
 - [ ] uncle seven's gold son
