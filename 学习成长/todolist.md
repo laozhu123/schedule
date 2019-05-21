@@ -1,22 +1,33 @@
 ### now
-- [ ] 看系统解剖学                 - gym
-- [ ] course machine-learning           - algorithm
-- [ ] 小程序学习                  - 工具包
+- [ ] react学习
+- [ ] node.js (koa2,bootstrap)学习
 
-### hurry
-- [ ] 用vps搭建k8s
-- [ ] 学习docker
-- [ ] js学习
-- [ ] 运动系统、神经系统、内分泌系统、循环系统、呼吸系统、消化系统、泌尿系统、生殖系统
+- [ ] 学习docker  -- now doing it 
+- [ ] 学习k8s基础
+- [ ] 搭建k8s
+
+- [ ] 局部解剖学
+- [ ] course machine-learning    - algorithm
 
 #### target 
-- [ ] 完成blog项目   -- js
-- [ ] 搞定微服务架构  -- docker
-- [ ] 完成小程序
+回家前(半个月时间)
+- [ ] 完成blog项目   -- js 通过修改weibozzz的项目来搞定
+
+回家后弄(1个月时间)
+- [ ] 设计商城项目   (业务逻辑、多家店铺问题、订单、支付)
+- [ ] 完成小程序     -- 商城项目 (准备拿大牛的项目来看看)
+- [ ] 管家
+
 - [ ] flutter
-- [ ] node.js(koa2,bootstrap)
-- [ ] 人体结构
+
+后端
+- [ ] 搞定微服务架构
+
+
 
 #### finished
-- [x] 学习人体肌肉群
-- [x] 学习人体骨骼
+- [x] html & html5 & css & css3 & ecamjs & jquery
+- [x] 系统解剖学
+- [x] 精准拉伸
+- [x] 人体结构
+
