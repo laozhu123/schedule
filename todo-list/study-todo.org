@@ -1,0 +1,13 @@
+* improve
+  
+** 数据库优化 
+*** TODO 换引擎为MyISAM
+** 工具
+*** 爬虫
+**** TODO 使用crawl进行分布式爬取（redis队列、bloomfilter、mongodb、cookies pool、proxy pool）
+** 算法
+*** 数据挖掘
+**** TODO apriori算法review
+*** 机器学习
+**** TODO tenorsflow使用
+**** TODO course machine learning

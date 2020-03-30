@@ -1,0 +1,134 @@
+#+BEGIN_QUOTE
+引用内容
+#+END_QUOTE
+
+在org文件中输入"<q"然后按 TAB 键会自动插入一个引用块，插入后在其中进行编辑即可
+
+
+快捷键	功能	备注
+C-<return>	在当前列表项的内容后建立一个同级列表项	光标在列表项同一行时有效
+M-<return>	在当前列表项后建立一个同级列表项	同上
+M-<right>	降低当前列表项的层级	同上
+M-<left>	提高当前列表项的层级	同上
+M-<up>	将当前列表项及其内容作为整体向上移动	同上
+M-<down>	将当前列表项及其内容作为整体向下移动	同上
+
+*粗体* 用两个星号包裹，星号与粗体前后的其他字应该各有至少一个空格或英文标点分隔开来
+*bold*,word,用英文逗号分隔开，bold显示出粗体效果
+*bold*word则不显示粗体效果
+
+/hello/ 用"/"包裹，规则同粗体
+/斜体/ 好像对中文不管用?导出成HTML时看到还是生效了，可能是字体关系吧
+
+_下划线_ 用"_"在前后包裹，规则同粗体
+_下划线_紧跟其他字，则不生效
+
++删除线+ 用"+"在前后包裹，规则同粗体
+
+#+Begin_EXAMPLE
+示例
+#+END_EXAMPLE
+
+在org文件中输入 "<e" 然后按 TAB 键来插入一个示例块，可以移动到其中并使用快捷键"C-'(单引号)"来在新窗格中编辑它，编辑好后用同样的快捷键来保存。
+
+#+BEGIN_SRC C++
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char *argv)
+{
+    cout << "代码块" << endl;
+
+    return 0;
+}
+#+END_SRC
+
+代码块稍微复杂一点，插入的话是通过输入"<s"然后按 TAB 键来达到，但插入后还要在"#+BEGIN_SRC"后指定代码的语言类型(如上例所示)。
+
+file:../../../assets/img/source-edit.gif
+
+
+[[<link url>][<text>]]
+
+[[http://linusp.github.io/][Linusp's Blog]]
+
+
++ treeroot  
+    + branch1
+    + branch2
+
+在输入的时候，我们按M-RET（Alt+回车）可以自动输入同级的条目，按M+left/right调整层级。同理，我们还可以输入一个有序列表：
+1) [-] 任务1 [33%]
+   1) [ ] 子任务1
+   2) [X] 子任务2
+   3) [ ] 子任务3
+2) [ ] 任务2
+我们按 - M-S-RET 可以输入一个带checkbox的列表项，而在总任务后面可以输入一个[%]或者[/]则能自动计算总任务进度。最后结果如图所示。
+* helo
+** TODO youyouyouoy [0%]
+   - [-] helo
+     - [X] sh1
+     - [ ] sh2
+   - [ ] googog 
+
+
+|   |   |   |   |   |
+|---+---+---+---+---|
+|   |   |   |   |   |
+ 
+* 表格
+C-c | 通过输入大小的方式插入表格
+C-c C-c 对齐表格
+Tab 调到右边一个表格
+enter 跳到下方的表格
+M-up/right/left/right 上下左右移动行（列）
+M-S-up/right/left/right 向上下左右插入行（列）
+
+
+直接显示的图片在Emacs里默认不显示，需按C-c C-x C-v才能显示，在输出成其他格式（html、pdf……）后也能看到。 　　 常用快捷键： - C-c C-x C-v 直接预览图片。
+
+一些常用命令如下： - C-c C-q 为标题添加标签 - C-c / m 生成带标签的树
+
+
+* 时间
+org-mode可以利用Emacs的时间空间插入当前时间。 输入C-c . 会出现一个日历，我们点选相应的时间即可插入。
+
+<2015-02-17 二>
+时间前可以加DEADLINE:和SCHEDULED:表示时间的类型如：
+
+DEADLINE:<2015-02-12 四>
+下面给出一个常见的TODO标签的模板：
+
+*** TODO    洗衣服
+SCHEDULED: <2015-02-19 四>
+DEADLINE: <2015-03-01 日>
+常用命令如下： - C-c .插入时间
+
+
+* 一些特殊文本格式
+和其他标记语言一样，org-mode也支持各种特殊文本格式（如斜体、下划线等）。如下所示：
+
+*bold*
+/italic/
+_underlined_
+=code=
+~verbatim~
++strike-through+
+
+* 富文本导出
+org-mode的强大之处还在于它能到出成各种不同的格式，例如html、pdf等，在导出时，可以加入一些说明符号，来制定导出选项，常用导出符号如下：
+
+设置标题和目录：
+
+# +TITLE: This is the title of the document
+# +OPTIONS: toc:2 (only to two levels in TOC)
+# +OPTIONS: toc:nil (no TOC at all)
+
+
+# +BEGIN_SRC emacs-lisp
+(+ 1 2 3 4)
+# +END_SRC
+
+* 设置任务优先级
+在Org-mode中，还针对任务设定了A，B，C三种优先级，在安排日程的时候可以按照优先级进行排序。为任务设定优先级是通过 快捷键 S-UP/DOWN
